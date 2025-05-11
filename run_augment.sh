@@ -1,7 +1,3 @@
-# kích hoạt môi trường
-source activate zhangchenlong
-
-# lặp qua 2 dataset ACE và MAVEN
 for i in ACE MAVEN; do
     # gán class-num theo dataset
     if [ "$i" = "ACE" ]; then
@@ -15,6 +11,7 @@ for i in ACE MAVEN; do
         for k in 42 45 48 51 54; do
             python train.py \
                 --data-root ./augmented_data \
+                --stream-root ./augmented_data \
                 --dataset "$i" \
                 --backbone bert-base-uncased \
                 --seed $k \
