@@ -61,7 +61,7 @@ def parse_arguments():
     parser.add_argument('--leave-zero', action='store_true')
     parser.add_argument('--single-label', action='store_true')
     parser.add_argument('--aug-repeat-times', type=int, default=1)
-    parser.add_argument('--aug-dropout-times', type=int, default=1)
+    parser.add_argument('--aug-dropout-times', type=int, default=0)
     parser.add_argument('--joint-da-loss', default="none", choices=["none", "ce", "dist", "mul"])
     parser.add_argument('--tlcl', action="store_true")
     parser.add_argument('--mse-loss', action="store_true")
