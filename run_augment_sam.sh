@@ -1,4 +1,4 @@
-for i in ACE MAVEN; do
+for i in MAVEN; do
     # gán class-num theo dataset
     if [ "$i" = "ACE" ]; then
         m=10
