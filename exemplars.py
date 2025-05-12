@@ -22,7 +22,21 @@ LABEL2EVENT_TYPE = {
         83: "Social event",
         4: "Catastrophe",
         21: "Killing",
-        24: "Attack"
+        24: "Attack",
+        46: "Military operation",
+        30: "Occurrence",
+        37: "Statement",
+        12: "Damage",
+        62: "Termination",
+        35: "Injury",
+        14: "Death",
+        47: "Motion",
+        13: "Destruction",
+        7: "Arrival"
+        
+        
+        
+        
     },
     "ACE": {
         9: "Contact: Phone-Write",
