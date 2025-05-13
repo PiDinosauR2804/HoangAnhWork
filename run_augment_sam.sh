@@ -8,13 +8,13 @@ for i in MAVEN; do
 
     # lặp qua shot-num = 5 và 10
     for j in 5 10; do
-        for k in 0 1 2 3 4; do
+        for k in 42 1 2 3 4; do
             python train.py \
                 --data-root ./augmented_data \
                 --stream-root ./augmented_data \
                 --dataset "$i" \
                 --backbone bert-base-uncased \
-                --perm-id $k \
+                --seed $k \
                 --lr 2e-5 \
                 --decay 1e-4 \
                 --no-freeze-bert \
